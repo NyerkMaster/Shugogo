@@ -9,7 +9,12 @@ A fan-made radar overlay for **Aion 2**. Shugogo isn't made by, endorsed by or a
 - **Pet souls** you still need: which monsters nearby drop them, and the Black Cloud Merchant's pet offers
 - **Upcoming events** (rifts, sieges, Abyss bosses, the Shugo Festival) with optional spoken reminders
 - **A farming tracker**: Kinah, Abyss Points and rank points per hour
+- **Combat:** a DPS meter (everyone's damage, skills and targets; honest about field bosses) and a log of your kills, deaths and assists, with each player's name a link to their Shugo.GG page
 - Collapse the map when you only want the timers
+
+## The Combat window
+
+**Combat** in the title bar opens it. **Damage** is a DPS meter: from your first hit to the end of the fight it shows your damage and, on ordinary monsters, in dungeons and in PvP in view, everyone else's (you, your party, or everyone: your choice), with each player's skills and targets, a boss's HP and a kill estimate, your best on each boss, and the last 30 fights to step through. On a field boss the server sends only your own damage, so the meter says so and shows only yours, as a share of the boss's HP. **K/D/A** logs every player you kill, who killed you (and the Abyss Rank Points it cost) and your assists, counted the way the game counts them: an ally's kill of a player your own hits did at least 10 % of their HP to in the 30 seconds before. Click a name to open that player's page on Shugo.GG in your browser; **Hide other players' names** is there for screenshots and streams. A line under the map (or under the title bar while the map is collapsed) keeps score during a fight. Other players' names stay on your PC, in the window and in `user_data/kda.jsonl`; they never go into a log.
 
 ## Install
 
@@ -33,6 +38,7 @@ program without an installer), `latest.json` (what the built-in updater reads) a
 - **It reads the minimap from your screen** (a few times a second, only that small part of the screen) to know where you are.
 - **It never touches the game:** not its files, not its memory, not its process. It sends nothing to the game or its servers and injects nothing.
 - **All it downloads:** the map pictures, once per region (from MetaBot.GG, kept in `user_data/maps/`); one small file a day from GitHub to see whether there's a new version (`latest.json`, a few KB; untick **Check for updates once a day** to stop it); and an update, only when you click **Install**. Updates are signed and checked before they're used.
+- **A click on a player's name** in the Combat window opens their [Shugo.GG](https://shugo.gg) page in your browser, only then: Shugogo itself never contacts Shugo.GG.
 - **Nothing about you or your PC is ever sent:** no account, no sign-in, no telemetry, no usage statistics, no crash reports. (Like any website, the sites it downloads from see your IP address.) Your settings, logs and recordings stay in `user_data/` on your PC.
 
 ## Risk
@@ -45,12 +51,13 @@ at your own risk.**
 Shugogo is free to use, but it isn't open source (© 2026 NyerkMaster). You may install it, use it and share copies of
 the official, unmodified downloads, free of charge. Modifying it, reverse engineering, decompiling or disassembling it
 (except where the law allows that regardless), selling it and repackaging it aren't allowed. The full terms are in
-`LICENSE.txt`, which Setup shows before it installs and puts beside `Shugogo.exe`. The third-party parts inside Shugogo
-(Python, Tcl/Tk, numpy, Pillow, PyInstaller's starter and run-time files) and its installer and uninstaller (made with
-Inno Setup) keep their own licences, in the `licenses` folder beside it, with the credits of the data Shugogo uses: the
-pet data's, with the MIT notices of the two projects it uses (`Pet data.txt`), the NPC names' (`NPC names.txt`:
-questlog.gg and MetaBot.GG), the event schedule's (`Event schedule.txt`: Shugo.GG, questlog.gg and MetaBot.GG) and the
-map data's (`Map data.txt`: MetaBot.GG's public maps). Shugogo comes with no warranty.
+`LICENSE.txt`, which Setup shows before it installs and puts beside `Shugogo.exe`. The third-party parts inside
+Shugogo (Python, Tcl/Tk, numpy, Pillow, PyInstaller's starter and run-time files) and its installer and uninstaller
+(made with Inno Setup) keep their own licences, in the `licenses` folder beside it, with the credits of the data
+Shugogo uses: the pet data's, with the MIT notices of the two projects it uses (`Pet data.txt`), the NPC names'
+(`NPC names.txt`: questlog.gg and MetaBot.GG), the skill names' (`Skill names.txt`: MetaBot.GG and questlog.gg), the
+event schedule's (`Event schedule.txt`: Shugo.GG, questlog.gg and MetaBot.GG) and the map data's (`Map data.txt`:
+MetaBot.GG's public maps). Shugogo comes with no warranty.
 
 ## Credits
 
@@ -64,6 +71,7 @@ link every page used. Game data © NCSOFT.
   [Chaotic Upper Reshanta](https://metabot.gg/en/aion-2/map/chaotic-upper-reshanta).
 - **NPC names:** [questlog.gg's NPC database](https://questlog.gg/aion-2/en/db/npcs) and
   [map](https://questlog.gg/aion-2/en/map), and MetaBot.GG's field-boss and NPC pages.
+- **Skill names:** [MetaBot.GG's Aion 2 skills](https://metabot.gg/en/aion-2/skills) and [questlog.gg's skill database](https://questlog.gg/aion-2/en/db/skills).
 - **Event schedule:** [Shugo.GG's timers](https://shugo.gg/timers),
   [questlog.gg's boss schedule](https://questlog.gg/aion-2/en/boss-schedule) and [MetaBot.GG's timers](https://metabot.gg/en/aion-2/events).
 - **Pet data:** [questlog.gg](https://questlog.gg/aion-2), [MetaBot.GG](https://metabot.gg/en/aion-2/mounts),
