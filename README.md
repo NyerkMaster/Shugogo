@@ -8,13 +8,14 @@ A fan-made radar overlay for **Aion 2**. Shugogo isn't made by, endorsed by or a
 - **The world map** with your position (read from the game's minimap), players by faction and monsters
 - **Pet souls** you still need: which monsters nearby drop them, and the Black Cloud Merchant's pet offers
 - **Upcoming events** (rifts, sieges, Abyss bosses, the Shugo Festival) with optional spoken reminders
-- **A farming tracker**: Kinah, Abyss Points and rank points per hour
+- **A Gains Tracker**: Kinah, Abyss Points and rank points per hour, starting by itself at each login
 - **Combat:** a DPS meter (everyone's damage, skills and targets; honest about field bosses) and a log of your kills, deaths and assists, with each player's name a link to their Shugo.GG page
-- Collapse the map when you only want the timers
+- **Only what you want on screen**: click Radar, Event Timers, Combat, Gains Tracker or Pets in the bar to show each one under it, in any mix
+- **Out of the way when you want**: the – in the bar minimizes Shugogo to one taskbar button; cube alerts, spoken reminders and the Gains Tracker go on, and a cube blinks the button
 
 ## The Combat window
 
-**Combat** in the title bar opens it. **Damage** is a DPS meter: from your first hit to the end of the fight it shows your damage and, on ordinary monsters, in dungeons and in PvP in view, everyone else's (you, your party, or everyone: your choice), with each player's skills and targets, a boss's HP and a kill estimate, your best on each boss, and the last 30 fights to step through. On a field boss the server sends only your own damage, so the meter says so and shows only yours, as a share of the boss's HP. **K/D/A** logs every player you kill, who killed you (and the Abyss Rank Points it cost) and your assists, counted the way the game counts them: an ally's kill of a player your own hits did at least 10 % of their HP to in the 30 seconds before. Click a name to open that player's page on Shugo.GG in your browser; **Hide other players' names** is there for screenshots and streams. A line under the map (or under the title bar while the map is collapsed) keeps score during a fight. Other players' names stay on your PC, in the window and in `user_data/kda.jsonl`; they never go into a log.
+**Combat** in the bar shows your K/D/A and the top three of the fight; its **Detailed** button opens the window. **Damage** is a DPS meter: from the first damage of the fight to its end it shows your damage and, on ordinary monsters, in dungeons and in PvP in view, everyone else's (you, your party, or everyone: your choice), with each player's skills and targets, a boss's HP and a kill estimate, your best on each boss, and the last 30 fights to step through. On a field boss the server sends only your own damage, so the meter says so and shows only yours, as a share of the boss's HP. **K/D/A** logs every player you kill, who killed you (and the Abyss Rank Points it cost) and your assists, counted the way the game counts them: an ally's kill of a player your own hits did at least 10 % of their HP to in the 30 seconds before. Click a name to open that player's page on Shugo.GG in your browser; **Hide other players' names** is there for screenshots and streams. The Combat section keeps score: your K / D / A beside its name, the fight line and the top three rows, yours among them. Other players' names stay on your PC, in the window and in `user_data/kda.jsonl`; they never go into a log.
 
 ## Install
 
