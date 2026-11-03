@@ -9,13 +9,13 @@ A fan-made radar overlay for **Aion 2**. Shugogo isn't made by, endorsed by or a
 - **Pet souls** you still need: which monsters nearby drop them, and the Black Cloud Merchant's pet offers
 - **Upcoming events** (rifts, sieges, Abyss bosses, the Shugo Festival) with optional spoken reminders
 - **A Gains Tracker**: Kinah, Abyss Points and rank points per hour, starting by itself at each login
+- **Your currencies** at the right of the status row: Odyle Energy, Kina and Abyss Points, and Nightmare tickets and Shugo Keys while you hold them
 - **Combat:** a DPS meter (everyone's damage, skills and targets; honest about field bosses) and a log of your kills, deaths and assists, with each player's name a link to their Shugo.GG page
 - **Only what you want on screen**: click Radar, Event Timers, Combat, Gains Tracker or Pets in the bar to show each one under it, in any mix
-- **Out of the way when you want**: the – in the bar minimizes Shugogo to one taskbar button; cube alerts, spoken reminders and the Gains Tracker go on, and a cube blinks the button
 
 ## The Combat window
 
-**Combat** in the bar shows your K/D/A and the top three of the fight; its **Detailed** button opens the window. **Damage** is a DPS meter: from the first damage of the fight to its end it shows your damage and, on ordinary monsters, in dungeons and in PvP in view, everyone else's (you, your party, or everyone: your choice), with each player's skills and targets, a boss's HP and a kill estimate, your best on each boss, and the last 30 fights to step through. On a field boss the server sends only your own damage, so the meter says so and shows only yours, as a share of the boss's HP. **K/D/A** logs every player you kill, who killed you (and the Abyss Rank Points it cost) and your assists, counted the way the game counts them: an ally's kill of a player your own hits did at least 10 % of their HP to in the 30 seconds before. Click a name to open that player's page on Shugo.GG in your browser; **Hide other players' names** is there for screenshots and streams. The Combat section keeps score: your K / D / A beside its name, the fight line and the top three rows, yours among them. Other players' names stay on your PC, in the window and in `user_data/kda.jsonl`; they never go into a log.
+**Combat** in the bar shows your K/D/A and the top three of the fight; its **Detailed** button opens the window. **Damage** is a DPS meter: from the first damage of the fight to its end it shows your damage and, on ordinary monsters, in dungeons and in PvP in view, everyone else's (you, your party, or everyone: your choice), with each player's class icon, skills and targets, a boss's HP and a kill estimate, your best on each boss, and the last 30 fights to step through. It has two looks, **Vibrant** (the default: each player a bar in their class's colour) and **Plain** (the rows as text), chosen in the Combat section or the window. On a field boss the server sends only your own damage, so the meter says so and shows only yours, as a share of the boss's HP. **K/D/A** logs every player you kill, who killed you (and the Abyss Rank Points it cost) and your assists, counted the way the game counts them: an ally's kill of a player your own hits did at least 10 % of their HP to in the 30 seconds before. Click a name to open that player's page on Shugo.GG in your browser; **Hide other players' names** is there for screenshots and streams. The Combat section keeps score: your K / D / A beside its name, the fight line and the top three rows, yours among them. Other players' names stay on your PC, in the window and in `user_data/kda.jsonl`; they never go into a log.
 
 ## Install
 
@@ -57,13 +57,14 @@ Shugogo (Python, Tcl/Tk, numpy, Pillow, PyInstaller's starter and run-time files
 (made with Inno Setup) keep their own licences, in the `licenses` folder beside it, with the credits of the data
 Shugogo uses: the pet data's, with the MIT notices of the two projects it uses (`Pet data.txt`), the NPC names'
 (`NPC names.txt`: questlog.gg and MetaBot.GG), the skill names' (`Skill names.txt`: MetaBot.GG and questlog.gg), the
-event schedule's (`Event schedule.txt`: Shugo.GG, questlog.gg and MetaBot.GG) and the map data's (`Map data.txt`:
-MetaBot.GG's public maps). Shugogo comes with no warranty.
+event schedule's (`Event schedule.txt`: Shugo.GG, questlog.gg and MetaBot.GG), the map data's (`Map data.txt`:
+MetaBot.GG's public maps) and the currency icons' (`Game icons.txt`: NCSOFT's art, by way of MetaBot.GG). Shugogo comes
+with no warranty.
 
 ## Credits
 
 Shugogo's game data comes from public Aion 2 sites, used with their permission; the files in the `licenses` folder
-link every page used. Game data © NCSOFT.
+link every page used. Game data and art © NCSOFT.
 
 - **Map data and map pictures:** [MetaBot.GG's maps](https://metabot.gg/en/aion-2/map): [Altgard](https://metabot.gg/en/aion-2/map/altgard),
   [Morheim](https://metabot.gg/en/aion-2/map/morheim), [Verteron](https://metabot.gg/en/aion-2/map/verteron), [Eltnen](https://metabot.gg/en/aion-2/map/eltnen),
@@ -73,6 +74,12 @@ link every page used. Game data © NCSOFT.
 - **NPC names:** [questlog.gg's NPC database](https://questlog.gg/aion-2/en/db/npcs) and
   [map](https://questlog.gg/aion-2/en/map), and MetaBot.GG's field-boss and NPC pages.
 - **Skill names:** [MetaBot.GG's Aion 2 skills](https://metabot.gg/en/aion-2/skills) and [questlog.gg's skill database](https://questlog.gg/aion-2/en/db/skills).
+- **Currency icons:** the game's own art, from MetaBot.GG's item pages:
+  [Odyle Energy](https://metabot.gg/en/aion-2/items/odyle-energy-bound),
+  [Nightmare Dungeon Challenge Ticket](https://metabot.gg/en/aion-2/items/nightmare-dungeon-challenge-ticket-bound),
+  [Shugo Festival Reward Key](https://metabot.gg/en/aion-2/items/shugo-festival-reward-key-bound),
+  [Kina](https://metabot.gg/en/aion-2/items/kina) and [Abyss Points](https://metabot.gg/en/aion-2/items/abyss-points).
+  Nothing is downloaded for them.
 - **Event schedule:** [Shugo.GG's timers](https://shugo.gg/timers),
   [questlog.gg's boss schedule](https://questlog.gg/aion-2/en/boss-schedule) and [MetaBot.GG's timers](https://metabot.gg/en/aion-2/events).
 - **Pet data:** [questlog.gg](https://questlog.gg/aion-2), [MetaBot.GG](https://metabot.gg/en/aion-2/mounts),
