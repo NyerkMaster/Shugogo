@@ -9,7 +9,7 @@ A fan-made radar overlay for **Aion 2**. Shugogo isn't made by, endorsed by or a
 - **Pet souls** you still need: which monsters nearby drop them, and the Black Cloud Merchant's pet offers
 - **Upcoming events** (rifts, sieges, Abyss bosses, the Shugo Festival) with optional spoken reminders
 - **A Gains Tracker**: Kinah, Abyss Points and rank points per hour, starting by itself at each login
-- **Your currencies** at the right of the status row: Odyle Energy, Kina and Abyss Points, and Nightmare tickets and Shugo Keys while you hold them
+- **Your currencies** at the right of the status row: Odyle Energy, and your Nightmare and Ascension Trial attempts and Shugo Festival and Dimensional Invasion keys as the game counts them
 - **Combat:** a DPS meter (everyone's damage, skills and targets; honest about field bosses) and a log of your kills, deaths and assists, with each player's name a link to their Shugo.GG page
 - **Only what you want on screen**: click Radar, Event Timers, Combat, Gains Tracker or Pets in the bar to show each one under it, in any mix
 
@@ -58,7 +58,7 @@ Shugogo (Python, Tcl/Tk, numpy, Pillow, PyInstaller's starter and run-time files
 Shugogo uses: the pet data's, with the MIT notices of the two projects it uses (`Pet data.txt`), the NPC names'
 (`NPC names.txt`: questlog.gg and MetaBot.GG), the skill names' (`Skill names.txt`: MetaBot.GG and questlog.gg), the
 event schedule's (`Event schedule.txt`: Shugo.GG, questlog.gg and MetaBot.GG), the map data's (`Map data.txt`:
-MetaBot.GG's public maps) and the currency icons' (`Game icons.txt`: NCSOFT's art, by way of MetaBot.GG). Shugogo comes
+MetaBot.GG's public maps) and the currency icons' (`Game icons.txt`: NCSOFT's art, four by way of MetaBot.GG, one from the game's window). Shugogo comes
 with no warranty.
 
 ## Credits
@@ -74,11 +74,12 @@ link every page used. Game data and art © NCSOFT.
 - **NPC names:** [questlog.gg's NPC database](https://questlog.gg/aion-2/en/db/npcs) and
   [map](https://questlog.gg/aion-2/en/map), and MetaBot.GG's field-boss and NPC pages.
 - **Skill names:** [MetaBot.GG's Aion 2 skills](https://metabot.gg/en/aion-2/skills) and [questlog.gg's skill database](https://questlog.gg/aion-2/en/db/skills).
-- **Currency icons:** the game's own art, from MetaBot.GG's item pages:
+- **Currency icons:** the game's own art, from MetaBot.GG's item pages (the Ascension Trial ticket turned violet):
   [Odyle Energy](https://metabot.gg/en/aion-2/items/odyle-energy-bound),
   [Nightmare Dungeon Challenge Ticket](https://metabot.gg/en/aion-2/items/nightmare-dungeon-challenge-ticket-bound),
-  [Shugo Festival Reward Key](https://metabot.gg/en/aion-2/items/shugo-festival-reward-key-bound),
-  [Kina](https://metabot.gg/en/aion-2/items/kina) and [Abyss Points](https://metabot.gg/en/aion-2/items/abyss-points).
+  [Ascension Trial Challenge Ticket](https://metabot.gg/en/aion-2/items/ascension-trial-challenge-ticket-bound),
+  [Shugo Festival Reward Key](https://metabot.gg/en/aion-2/items/shugo-festival-reward-key-bound); the Dimensional Invasion key, which has no page, is cut
+  from the game's own window (and turned silver).
   Nothing is downloaded for them.
 - **Event schedule:** [Shugo.GG's timers](https://shugo.gg/timers),
   [questlog.gg's boss schedule](https://questlog.gg/aion-2/en/boss-schedule) and [MetaBot.GG's timers](https://metabot.gg/en/aion-2/events).
