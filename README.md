@@ -8,14 +8,35 @@ A fan-made radar overlay for **Aion 2**. Shugogo isn't made by, endorsed by or a
 - **The world map** with your position (read from the game's minimap), players by faction and monsters
 - **Pet souls** you still need: which monsters nearby drop them, and the Black Cloud Merchant's pet offers
 - **Upcoming events** (rifts, sieges, Abyss bosses, the Shugo Festival) with optional spoken reminders
-- **A Gains Tracker**: Kinah, Abyss Points and rank points per hour, starting by itself at each login
+- **A Gains Tracker**: Kinah, Abyss Points and rank points per hour, and a chart of what you earned in each 5 minutes, starting by itself at each login
 - **Your currencies** at the right of the status row: Odyle Energy, and your Nightmare and Ascension Trial attempts and Shugo Festival and Dimensional Invasion keys as the game counts them
 - **Combat:** a DPS meter (everyone's damage, skills and targets; honest about field bosses) and a log of your kills, deaths and assists, with each player's name a link to their Shugo.GG page
+- **A Raid Tracker** (beta) for Abyssal Forge: Ludra: every pull's damage over time, the boss's HP, who died, when and to what, your progress across the nights and the people you've raided with
 - **Only what you want on screen**: click Radar, Event Timers, Combat, Gains Tracker or Pets in the bar to show each one under it, in any mix
 
 ## The Combat window
 
-**Combat** in the bar shows your K/D/A and the top three of the fight; its **Detailed** button opens the window. **Damage** is a DPS meter: from the first damage of the fight to its end it shows your damage and, on ordinary monsters, in dungeons and in PvP in view, everyone else's (you, your party, or everyone: your choice), with each player's class icon, skills and targets, a boss's HP and a kill estimate, your best on each boss, and the last 30 fights to step through. It has two looks, **Vibrant** (the default: each player a bar in their class's colour) and **Plain** (the rows as text), chosen in the Combat section or the window. On a field boss the server sends only your own damage, so the meter says so and shows only yours, as a share of the boss's HP. **K/D/A** logs every player you kill, who killed you (and the Abyss Rank Points it cost) and your assists, counted the way the game counts them: an ally's kill of a player your own hits did at least 10 % of their HP to in the 30 seconds before. Click a name to open that player's page on Shugo.GG in your browser; **Hide other players' names** is there for screenshots and streams. The Combat section keeps score: your K / D / A beside its name, the fight line and the top three rows, yours among them. Other players' names stay on your PC, in the window and in `user_data/kda.jsonl`; they never go into a log.
+**Combat** in the bar shows your K/D/A and the top five of the fight; its **Detailed** button opens the window. **Damage** is a DPS meter: from the first damage of the fight to its end it shows your damage and, on ordinary monsters, in dungeons and in PvP in view, everyone else's (you, your party, or everyone: your choice), with each player's class icon, skills and targets, a boss's HP and a kill estimate, your best on each boss, and the last 30 fights to step through. It has two looks, **Vibrant** (the default: each player a bar in their class's colour) and **Plain** (the rows as text), chosen in the Combat section or the window. On a field boss the server sends only your own damage, so the meter says so and shows only yours, as a share of the boss's HP. **K/D/A** logs every player you kill, who killed you (and the Abyss Rank Points it cost) and your assists, counted the way the game counts them: an ally's kill of a player your own hits did at least 10 % of their HP to in the 30 seconds before. Click a name to open that player's page on Shugo.GG in your browser; **Hide other players' names** is there for screenshots and streams. The Combat section keeps score: your K / D / A beside its name, the fight line and the top five rows (a party), yours among them; three or four when the window wouldn't fit your screen otherwise. Other players' names stay on your PC, in the window and in `user_data/kda.jsonl`; they never go into a log.
+
+## The Raid Tracker (beta)
+
+It's new and may have mistakes (a cause of death, a missed death, someone's damage): check anything important
+in game.
+
+**Raids** in the Combat section, or **Raids ↗** in the Combat window, opens it. In Abyssal Forge: Ludra (Normal and
+Hard), and in any instance boss fight with 6 or more players, it records every pull: everyone's damage second by second,
+the boss's HP, and who died, when and to what (the game's own death message).
+
+- **Raid**: one pull at a time. Duration, Party DPS, Damage taken and Deaths; the **Damage** and **Damage taken** charts
+  with a ☠ at each death and the boss's HP; the players' table; **Deaths** (what you, your party or everyone die to,
+  and a death's last 10 seconds); **Timeline** (a lane per player).
+- **History**: the boss's HP left at the end of every pull across the nights, and your bests on each boss.
+- **People**: everyone you've raided with: how often they died, how often first, and their damage against the same
+  class on the same boss. Numbers, not verdicts: the game doesn't say why someone died.
+
+A boss's skills show as a number ("skill 1803110") until you name them (right-click). The raid history stays on your PC,
+in `user_data/raids/`, never in a log; **Hide other players' names** hides names here too, and **Forget**, **Don't
+track**, **Clear raid history…** and **Reset everything…** delete it.
 
 ## Install
 
@@ -39,8 +60,8 @@ program without an installer), `latest.json` (what the built-in updater reads) a
 - **It reads the minimap from your screen** (a few times a second, only that small part of the screen) to know where you are.
 - **It never touches the game:** not its files, not its memory, not its process. It sends nothing to the game or its servers and injects nothing.
 - **All it downloads:** the map pictures, once per region (from MetaBot.GG, kept in `user_data/maps/`); one small file a day from GitHub to see whether there's a new version (`latest.json`, a few KB; untick **Check for updates once a day** to stop it); and an update, only when you click **Install**. Updates are signed and checked before they're used.
-- **A click on a player's name** in the Combat window opens their [Shugo.GG](https://shugo.gg) page in your browser, only then: Shugogo itself never contacts Shugo.GG.
-- **Nothing about you or your PC is ever sent:** no account, no sign-in, no telemetry, no usage statistics, no crash reports. (Like any website, the sites it downloads from see your IP address.) Your settings, logs and recordings stay in `user_data/` on your PC.
+- **A click on a player's name** in the Combat window or the Raid Tracker opens their [Shugo.GG](https://shugo.gg) page in your browser, only then: Shugogo itself never contacts Shugo.GG.
+- **Nothing about you or your PC is ever sent:** no account, no sign-in, no telemetry, no usage statistics, no crash reports. (Like any website, the sites it downloads from see your IP address.) Your settings, logs, recordings and raid history stay in `user_data/` on your PC.
 
 ## Risk
 
