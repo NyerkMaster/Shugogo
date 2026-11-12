@@ -25,12 +25,14 @@ in game.
 
 **Raids** in the Combat section, or **Raids ↗** in the Combat window, opens it. In Abyssal Forge: Ludra (Normal and
 Hard), and in any instance boss fight with 6 or more players, it records every pull: everyone's damage second by second,
-the boss's HP, and who died, when and to what (the game's own death message).
+the boss's HP, and who died, when and to what (the game's own death message). A pull under 10 seconds that isn't a kill
+doesn't count.
 
 - **Raid**: one pull at a time. Duration, Party DPS, Damage taken and Deaths; the **Damage** and **Damage taken** charts
   with a ☠ at each death and the boss's HP; the players' table; **Deaths** (what you, your party or everyone die to,
   and a death's last 10 seconds); **Timeline** (a lane per player).
-- **History**: the boss's HP left at the end of every pull across the nights, and your bests on each boss.
+- **History**: the boss's HP left at the end of every pull across the nights (a wipe's: where the boss was when it
+  reset), and your bests on each boss.
 - **People**: everyone you've raided with: how often they died, how often first, and their damage against the same
   class on the same boss. Numbers, not verdicts: the game doesn't say why someone died.
 
