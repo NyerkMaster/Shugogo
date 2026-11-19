@@ -8,7 +8,7 @@ A fan-made radar overlay for **Aion 2**. Shugogo isn't made by, endorsed by or a
 - **The world map** with your position (read from the game's minimap), players by faction and monsters
 - **Pet souls** you still need: which monsters nearby drop them, and the Black Cloud Merchant's pet offers
 - **Upcoming events** (rifts, sieges, Abyss bosses, the Shugo Festival) with optional spoken reminders, which also show while the section is hidden
-- **A Gains Tracker**: Kinah, Abyss Points and rank points per hour, your K/D/A during the run, and a chart of what you earned in each 5 minutes, starting by itself at each login
+- **A Gains Tracker**: Kinah, Abyss Points and rank points per hour, your K/D/A during the run with your last three kills and assists and the rank points each gave, and a chart of what you earned in each 5 minutes, starting by itself at each login
 - **Your currencies** at the right of the status row: Odyle Energy, and your Nightmare and Ascension Trial attempts and Shugo Festival and Dimensional Invasion keys as the game counts them
 - **Combat:** a DPS meter (everyone's damage, skills and targets; honest about field bosses) and a log of your kills, deaths and assists, with each player's name a link to their Shugo.GG page
 - **A Raid Tracker** (beta) for Abyssal Forge: Ludra: every pull's damage over time, the boss's HP, who died, when and to what, your progress across the nights and the people you've raided with
@@ -48,8 +48,11 @@ track**, **Clear raid history…** and **Reset everything…** delete it.
 
 No installer wanted? **`Shugogo-<version>-windows.zip`** holds the same program: unzip it somewhere permanent and run `Shugogo.exe`.
 
-Shugogo updates itself: once a day it checks this page for a new version and asks before installing anything
-(⚙ Settings → General).
+Shugogo updates itself: each time it starts (and every few hours) it checks this page for a new version and installs it
+by itself when nothing's going on; untick **Install updates automatically** in ⚙ Settings → General to be asked first.
+A release that changes the licence always asks. The zip's copy installs the small updates itself; for one that comes as
+the installer it sends you to this page. Copies on 0.19.5 or older still ask: click **Install** once to get 0.19.6 (a zip
+copy: download it from **[Releases](../../releases/latest)**).
 
 **The files on a release:** `Shugogo-Setup-<version>.exe` (install this), `Shugogo-<version>-windows.zip` (the same
 program without an installer), `latest.json` (what the built-in updater reads) and, for a small update,
@@ -61,7 +64,7 @@ program without an installer), `latest.json` (what the built-in updater reads) a
 - **It only listens.** It reads a copy of the game's network traffic through [Npcap](https://npcap.com) (as Wireshark and the DPS meters do), only this PC's own traffic, and only the game's connections are decoded.
 - **It reads the minimap from your screen** (a few times a second, only that small part of the screen) to know where you are.
 - **It never touches the game:** not its files, not its memory, not its process. It sends nothing to the game or its servers and injects nothing.
-- **All it downloads:** the map pictures, once per region (from MetaBot.GG, kept in `user_data/maps/`); one small file a day from GitHub to see whether there's a new version (`latest.json`, a few KB; untick **Check for updates once a day** to stop it); and an update, only when you click **Install**. Updates are signed and checked before they're used.
+- **All it downloads:** the map pictures, once per region (from MetaBot.GG, kept in `user_data/maps/`); one small file from GitHub when it starts and every few hours, to see whether there's a new version (`latest.json`, a few KB; untick **Check for updates when Shugogo starts** to stop it); and a new version when there is one, by itself (untick **Install updates automatically** to be asked first) or when you click **Install**. Updates are signed and checked before they're used.
 - **A click on a player's name** in the Combat window or the Raid Tracker opens their [Shugo.GG](https://shugo.gg) page in your browser, only then: Shugogo itself never contacts Shugo.GG.
 - **Nothing about you or your PC is ever sent:** no account, no sign-in, no telemetry, no usage statistics, no crash reports. (Like any website, the sites it downloads from see your IP address.) Your settings, logs, recordings and raid history stay in `user_data/` on your PC.
 
