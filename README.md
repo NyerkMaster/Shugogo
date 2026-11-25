@@ -6,13 +6,13 @@ A fan-made radar overlay for **Aion 2**. Shugogo isn't made by, endorsed by or a
 
 - **Hidden Cubes** near you, with a sound and a direction the moment one appears
 - **The world map** with your position (read from the game's minimap), players by faction and monsters
-- **Pet souls** you still need: which monsters nearby drop them, and the Black Cloud Merchant's pet offers
-- **Upcoming events** (rifts, sieges, Abyss bosses, the Shugo Festival) with optional spoken reminders, which also show while the section is hidden
-- **A Gains Tracker**: Kinah, Abyss Points and rank points per hour, your K/D/A during the run with your last three kills and assists and the rank points each gave, and a chart of what you earned in each 5 minutes, starting by itself at each login
+- **Your pets** as a Pet Dex (or a list): every pet by genus, complete, levelling or missing at a glance, and the pets near you whose souls you still need, with the Black Cloud Merchant's pet offers
+- **Upcoming events** (rifts, sieges, Abyss bosses, the Shugo Festival) in four looks (Tiles, Next up, Agenda or Plain), with optional spoken reminders, which also show while the section is hidden
+- **A Gains Tracker**: Kinah, Abyss Points and rank points per hour, your K/D/A during the run with your last three kills and assists and the rank points each gave, and a chart of what you earned in each 5 minutes, starting by itself at each login, as coloured tiles (Vibrant) or plain rows
 - **Your currencies** at the right of the status row: Odyle Energy, and your Nightmare and Ascension Trial attempts and Shugo Festival and Dimensional Invasion keys as the game counts them
 - **Combat:** a DPS meter (everyone's damage, skills and targets; honest about field bosses) and a log of your kills, deaths and assists, with each player's name a link to their Shugo.GG page
 - **A Raid Tracker** (beta) for Abyssal Forge: Ludra: every pull's damage over time, the boss's HP, who died, when and to what, your progress across the nights and the people you've raided with
-- **Only what you want on screen**: click Radar, Event Timers, Combat, Gains Tracker or Pets in the bar to show each one under it, in any mix
+- **Only what you want on screen**: click Radar, Event Timers, Combat, Gains Tracker or Pets in the bar to show each one under it, in any mix, and pop any of them out with **↗** into a window of its own, anywhere on your screens (**↙** puts it back)
 
 ## The Combat window
 
@@ -51,7 +51,7 @@ No installer wanted? **`Shugogo-<version>-windows.zip`** holds the same program:
 Shugogo updates itself: each time it starts (and every few hours) it checks this page for a new version and installs it
 by itself when nothing's going on; untick **Install updates automatically** in ⚙ Settings → General to be asked first.
 A release that changes the licence always asks. The zip's copy installs the small updates itself; for one that comes as
-the installer it sends you to this page. Copies on 0.19.5 or older still ask: click **Install** once to get 0.19.6 (a zip
+the installer it sends you to this page. Copies on 0.19.5 or older still ask: click **Install** once to get 0.19.7 (a zip
 copy: download it from **[Releases](../../releases/latest)**).
 
 **The files on a release:** `Shugogo-Setup-<version>.exe` (install this), `Shugogo-<version>-windows.zip` (the same
